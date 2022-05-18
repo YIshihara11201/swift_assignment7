@@ -104,10 +104,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         NSLayoutConstraint.activate([
             snackStack.leadingAnchor.constraint(equalTo: navBar.leadingAnchor),
             snackStack.trailingAnchor.constraint(equalTo: navBar.trailingAnchor),
-//            snackStack.topAnchor.constraint(equalTo: navBar.topAnchor, constant: 100),
+            snackStack.bottomAnchor.constraint(equalTo: navBar.bottomAnchor, constant: -8),
+            snackStack.heightAnchor.constraint(equalToConstant: 100)
 //            snackStack.bottomAnchor.constraint(equalTo: navBar.bottomAnchor, constant: 0),
-            snackStack.centerYAnchor.constraint(equalTo: navBar.centerYAnchor, constant: 50),
-            snackStack.centerXAnchor.constraint(equalTo: navBar.centerXAnchor),
+//            snackStack.centerYAnchor.constraint(equalTo: navBar.centerYAnchor),
+//            snackStack.centerXAnchor.constraint(equalTo: navBar.centerXAnchor),
         ])
     }
     
